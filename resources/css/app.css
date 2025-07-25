@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .slide {
+        @apply opacity-0;
+    }
+
+    .slide.current {
+        @apply opacity-100 z-50;
+    }
+}
