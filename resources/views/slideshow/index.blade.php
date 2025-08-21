@@ -26,7 +26,7 @@
                         <div class="font-bold text-3xl">{{ $graduate->nama }}</div>
                         <div class="font-medium text-xl mb-2">{{ $graduate->nim }}</div>
                         <div class="font-medium mb-2 text-xl">
-                            {{ $graduate->department->id != 36 ? 'Judul Skripsi : ' . mb_convert_encoding($graduate->judulSkripsi, 'UTF-8') : 'Judul Tesis : ' . html_entity_decode(htmlentities($graduate->judulSkripsi)) }}
+                            {{ $graduate->department?->id != 36 ? 'Judul Skripsi : ' . mb_convert_encoding($graduate->judulSkripsi, 'UTF-8') : 'Judul Tesis : ' . html_entity_decode(htmlentities($graduate->judulSkripsi)) }}
                         </div>
                         <ul class="list-disc list-outside px-4">
                             @foreach ($graduate->passStatements as $statement)
@@ -38,9 +38,9 @@
                     </div>
                 </div>
                 <div class="py-6 text-center font-bold text-3xl bg-white rounded-md border-4 border-yellow-400">
-                    <div>{{ __('Program Studi ') . $graduate->department->name }}</div>
-                    <div>{{ $graduate->department->faculty->name }}</div>
-                    <div>{{ $graduate->department->title }}</div>
+                    <div>{{ __('Program Studi ') . $graduate->department?->name }}</div>
+                    <div>{{ $graduate->department?->faculty->name }}</div>
+                    <div>{{ $graduate->department?->title }}</div>
                 </div>
             </div>
         @endforeach

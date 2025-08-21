@@ -23,10 +23,10 @@
 
                     <div class="text-white
                         text-6xl text-bold text-shadow-sm shadow-gray-600">
-                        {{ $graduate->department->faculty->name }}</div>
+                        {{ $graduate->department?->faculty->name }}</div>
                     <div class="text-white
                         text-4xl text-bold text-shadow-sm shadow-gray-600">
-                        {{ $graduate->department->name }}</div>
+                        {{ $graduate->department?->name }}</div>
                 </div>
                 {{-- End of faculty and departments --}}
 
@@ -54,7 +54,7 @@
                             <div class="text-white font-bold text-6xl text-shadow-sm shadow-gray-600">
                                 {{ $graduate->nama }}</div>
                             <div class="text-white text-bold text-4xl text-shadow-sm shadow-gray-600">
-                                {{ $graduate->department->title }}</div>
+                                {{ $graduate->department?->title }}</div>
                         </div>
                     </div>
                 </div>

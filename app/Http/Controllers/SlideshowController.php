@@ -15,7 +15,7 @@ class SlideshowController extends Controller
             'stKeuangan' => 'system:valid'
         ];
 
-        $graduates = Graduate::with(['department', 'passStatements'])->where($filters)->get()->sortBy(fn ($q) => $q->department->order_id);
+        $graduates = Graduate::with(['department', 'passStatements'])->where($filters)->get()->sortBy(fn ($q) => $q->department?->order_id);
 
         return view('slideshow.index', [
             'graduates' => $graduates->all()
