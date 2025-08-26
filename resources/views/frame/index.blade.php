@@ -19,14 +19,13 @@
                 class="absolute left-0 bottom-0 right-0 py-12 transition-opacity duration-300 h-full w-full flex flex-col justify-between items-center  {{ $loop->index == 0 ? 'current' : '' }} slide">
 
                 {{-- Faculty and departments --}}
-                <div class="w-full text-end">
-
+                <div class="w-full text-end mr-3">
                     <div class="text-white
                         text-6xl text-bold text-shadow-sm shadow-gray-600">
-                        {{ $graduate->department->faculty->name }}</div>
+                        {{ $graduate->department?->faculty->name }}</div>
                     <div class="text-white
                         text-4xl text-bold text-shadow-sm shadow-gray-600">
-                        {{ $graduate->department->name }}</div>
+                        {{ $graduate->department?->name }}</div>
                 </div>
                 {{-- End of faculty and departments --}}
 
@@ -44,9 +43,9 @@
 
                 {{-- Student detail --}}
                 <div class="flex justify-between items-center w-full">
-                    <div class="flex">
+                    <div class="flex ml-1">
                         <div class="w-60 h-80 border-4 rounded border-white">
-                            <img src="{{ asset('storage/images/31/' . $graduate->nim . '.jpg') }}"
+                            <img src="{{ asset('storage/images/32/' . $graduate->nim . '.jpg') }}"
                                 alt="{{ $graduate->nim }}" class="w-full h-full" loading="lazy" />
                         </div>
 
@@ -54,7 +53,7 @@
                             <div class="text-white font-bold text-6xl text-shadow-sm shadow-gray-600">
                                 {{ $graduate->nama }}</div>
                             <div class="text-white text-bold text-4xl text-shadow-sm shadow-gray-600">
-                                {{ $graduate->department->title }}</div>
+                                {{ $graduate->department?->title }}</div>
                         </div>
                     </div>
                 </div>
