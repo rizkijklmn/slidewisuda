@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\FacultyController;
+use App\Http\Controllers\FrameController;
 use App\Http\Controllers\GraduateController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
@@ -22,6 +23,8 @@ Route::get('/', function () {
 Route::get('/slideshow/{session?}', 'App\Http\Controllers\SlideshowController@index');
 // Route::get('/slideshow/{index}', 'App\Http\Controllers\SlideshowController@index');
 Route::get('/frame/{session?}', 'App\Http\Controllers\FrameController@index');
+
+Route::get('/predikat', [FrameController::class, 'predikat'])->name('predikat');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

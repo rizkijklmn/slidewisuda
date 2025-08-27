@@ -11,7 +11,7 @@ class SlideshowController extends Controller
     public function index()
     {
         $filters = [
-            'idWisuda' => 31,
+            'idWisuda' => 32,
             'stKeuangan' => 'system:valid'
         ];
 
