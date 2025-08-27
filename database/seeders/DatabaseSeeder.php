@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
     public function run()
     {
         // $nims = [
-        //     '0101623006',
+        //     '0803623009',
         // ];
 
         // foreach ($nims as $nim) {
@@ -37,46 +37,46 @@ class DatabaseSeeder extends Seeder
         // ]);
 
         // High scores
-        PassStatement::create([
-            'nim' => '0101623006',
-            'description' => 'IPK Tertinggi Fakultas Sains dan Teknologi Program Magister'
-        ]);
+        // PassStatement::create([
+        //     'nim' => '0101623006',
+        //     'description' => 'IPK Tertinggi Fakultas Sains dan Teknologi Program Magister'
+        // ]);
 
-        PassStatement::create([
-            'nim' => '0106521009',
-            'description' => 'IPK Tertinggi Fakultas Ilmu Sosial dan Ilmu Politik Program Magister'
-        ]);
+        // PassStatement::create([
+        //     'nim' => '0106521009',
+        //     'description' => 'IPK Tertinggi Fakultas Sains dan Teknologi Program Sarjana'
+        // ]);
 
-        PassStatement::create([
-            'nim' => '0302521018',
-            'description' => 'IPK Tertinggi '
-        ]);
+        // PassStatement::create([
+        //     'nim' => '0302521018',
+        //     'description' => 'IPK Tertinggi Fakultas Ekonomi dan Bisnis Program Sarjana'
+        // ]);
 
-        PassStatement::create([
-            'nim' => '0404520014',
-            'description' => 'IPK Tertinggi '
-        ]);
+        // PassStatement::create([
+        //     'nim' => '0404520014',
+        //     'description' => 'IPK Tertinggi Universitas'
+        // ]);
 
-        PassStatement::create([
-            'nim' => '0603521035',
-            'description' => 'IPK Tertinggi '
-        ]);
+        // PassStatement::create([
+        //     'nim' => '0603521035',
+        //     'description' => 'IPK Tertinggi Fakultas Psikologi dan Pendidikan Program Sarjana'
+        // ]);
 
-        PassStatement::create([
-            'nim' => '0801521040',
-            'description' => 'IPK Tertinggi '
-        ]);
+        // PassStatement::create([
+        //     'nim' => '0801521040',
+        //     'description' => 'IPK Tertinggi Fakultas Ilmu Sosial dan Ilmu Politik Program Sarjana'
+        // ]);
 
-        PassStatement::create([
-            'nim' => '0803623003',
-            'description' => 'IPK Tertinggi '
-        ]);
+        // PassStatement::create([
+        //     'nim' => '0803623003',
+        //     'description' => 'IPK Tertinggi Fakultas Ilmu Sosial dan Ilmu Politik Program Magister'
+        // ]);
 
 
         // Best students
-        // PassStatement::create([
-        //     'nim' => '',
-        //     'description' => 'Lulusan Terbaik Fakultas Hukum Program Magister'
-        // ]);
+        PassStatement::create([
+            'nim' => '0301521023',
+            'description' => 'Lulusan Terbaik Fakultas Ekonomi dan Bisnis Program Sarjana'
+        ]);
     }
 }
