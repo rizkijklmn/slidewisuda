@@ -13,8 +13,7 @@
 <body>
     <div class="relative h-screen bg-[#00ff00]">
         @foreach ($graduates as $graduate)
-
-        {{-- Wrapper detail student --}}
+            {{-- Wrapper detail student --}}
             <div
                 class="absolute left-0 bottom-0 right-0 py-12 transition-opacity duration-300 h-full w-full flex flex-col justify-between items-center  {{ $loop->index == 0 ? 'current' : '' }} slide">
 

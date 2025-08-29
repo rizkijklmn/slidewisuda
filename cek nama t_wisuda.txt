@@ -1,0 +1,517 @@
+-- Buat ngecek apakah nama wisudawan di excel announcer sudah ada semua di t_wisuda
+SELECT daftar_nama.nama
+FROM (
+SELECT 'Indri Rosemaya Whisnuwardani' AS nama UNION ALL
+SELECT 'Saipul Rohman' AS nama UNION ALL
+SELECT 'Irma Nursubchiana Indah Iskandar' AS nama UNION ALL
+SELECT 'Tasya Amalda Ramadhina' AS nama UNION ALL
+SELECT 'Hutami Fakih Nurhasanah' AS nama UNION ALL
+SELECT 'Najwa Khalishah Tuffahati Hartanto' AS nama UNION ALL
+-- SELECT 'Muthi'ah Humaira Radyani' AS nama UNION ALL
+SELECT 'Anissa Permatasari' AS nama UNION ALL
+SELECT 'Putri Yasmin Martsela' AS nama UNION ALL
+SELECT 'Pradiktha Ratnasari Agustine' AS nama UNION ALL
+-- SELECT 'Ra'id Muhammad Kossah' AS nama UNION ALL
+SELECT 'Mochammad Zainul Arifin' AS nama UNION ALL
+SELECT 'Taufik Ardiantono' AS nama UNION ALL
+SELECT 'Khotibul Umam' AS nama UNION ALL
+SELECT 'Aris Septiawan' AS nama UNION ALL
+SELECT 'Cahya Wiguna ' AS nama UNION ALL
+SELECT 'Setyo Aji Wibowo' AS nama UNION ALL
+SELECT 'Roni Budi Setyono' AS nama UNION ALL
+SELECT 'Adi Setiyanto' AS nama UNION ALL
+SELECT 'Allusia Asyafa' AS nama UNION ALL
+SELECT 'Fauzi Abdurrochman' AS nama UNION ALL
+SELECT 'Raden Viqi Maulana Ihsan Zulfikar' AS nama UNION ALL
+SELECT 'Fedellysia Agatha' AS nama UNION ALL
+SELECT 'Firman Firdaus' AS nama UNION ALL
+SELECT 'A. Habib Amanatullah Rahdar' AS nama UNION ALL
+SELECT 'Abraham Gunawan' AS nama UNION ALL
+SELECT 'Aisyah Rahman' AS nama UNION ALL
+SELECT 'Albert Stephan Aswin' AS nama UNION ALL
+SELECT 'Della Setiyawati' AS nama UNION ALL
+SELECT 'Mulyono' AS nama UNION ALL
+SELECT 'Nasrullah' AS nama UNION ALL
+SELECT 'Nurita Singalodra' AS nama UNION ALL
+SELECT 'Roudoh Rohmatilah' AS nama UNION ALL
+SELECT 'Siswahyudi' AS nama UNION ALL
+SELECT 'Tubagus Akbar Satria Primadana' AS nama UNION ALL
+SELECT 'M Amir Maksum' AS nama UNION ALL
+SELECT 'Sada Arifin' AS nama UNION ALL
+SELECT 'Ayuni Nilam Cahya' AS nama UNION ALL
+SELECT 'Dinar Ayudya Maharani' AS nama UNION ALL
+SELECT 'Ega Pribadi' AS nama UNION ALL
+SELECT 'Muhammad Natsir' AS nama UNION ALL
+SELECT 'Rinny Purnamasari Gartiwa' AS nama UNION ALL
+SELECT 'Anggraeni Puspitasari' AS nama UNION ALL
+SELECT 'Nugroho Dwi Rinaryanta' AS nama UNION ALL
+SELECT 'Ahmad Halim Lubis' AS nama UNION ALL
+SELECT 'Reagy Muzqufa' AS nama UNION ALL
+SELECT 'Risma Yuliana' AS nama UNION ALL
+SELECT 'Alwi Husain' AS nama UNION ALL
+SELECT 'Audy Prama' AS nama UNION ALL
+SELECT 'Dinda Ayuana Kartika' AS nama UNION ALL
+SELECT 'Faiz Ghiffari' AS nama UNION ALL
+SELECT 'Sherly Ayu Ravenika' AS nama UNION ALL
+SELECT 'Nauralita Dwi Novanny' AS nama UNION ALL
+SELECT 'Muhammad Farhan Mulyadi' AS nama UNION ALL
+SELECT 'Yazid Farhan Anwar' AS nama UNION ALL
+SELECT 'Zidan Ailal Ramadhan' AS nama UNION ALL
+SELECT 'Endrika Septya Adilfi' AS nama UNION ALL
+-- SELECT 'Ghunyatullaami'ah' AS nama UNION ALL
+SELECT 'Aditya Hari Utomo' AS nama UNION ALL
+SELECT 'Fikri As Sidiq' AS nama UNION ALL
+SELECT 'Zulfah Uzlifatul Jannah' AS nama UNION ALL
+SELECT 'Yudha Erlangga Kakan Sukarna' AS nama UNION ALL
+SELECT 'Rizka Maharani' AS nama UNION ALL
+SELECT 'Ratni Nur Ilaliah Pratiwi' AS nama UNION ALL
+SELECT 'Arbhi Rama Asher Maulana' AS nama UNION ALL
+SELECT 'Mochammad Diwa Fairus Wiryawan Widaus' AS nama UNION ALL
+SELECT 'Ferdyansyah ' AS nama UNION ALL
+SELECT 'Anisa Nuzul Nurahmawati' AS nama UNION ALL
+SELECT 'Aris Hasan Ubaidillah' AS nama UNION ALL
+SELECT 'Muhamad Fikri Hidayat' AS nama UNION ALL
+SELECT 'Teguh Adi Setia' AS nama UNION ALL
+SELECT 'Imam Maulana' AS nama UNION ALL
+SELECT 'Aulia Ifad Fadilah' AS nama UNION ALL
+SELECT 'Barkah Isnaeni' AS nama UNION ALL
+SELECT 'Debi Suci Puspitasari' AS nama UNION ALL
+-- SELECT 'Dhiya'Ulhaq Putri Kinanty' AS nama UNION ALL
+SELECT 'Fadillah Dimas Andika Pratama' AS nama UNION ALL
+SELECT 'Fellia Adria Safitri' AS nama UNION ALL
+SELECT 'Helena Putri' AS nama UNION ALL
+SELECT 'Maisitha Muthia Fakhira' AS nama UNION ALL
+SELECT 'Naurah Zhafirah' AS nama UNION ALL
+SELECT 'Kian Aryadi' AS nama UNION ALL
+SELECT 'Andika Suherman' AS nama UNION ALL
+SELECT 'Arman Haditiansyah' AS nama UNION ALL
+SELECT 'Bella Nabila' AS nama UNION ALL
+SELECT 'Afiffa Nurhaliza' AS nama UNION ALL
+SELECT 'Jihan Shafira Adini' AS nama UNION ALL
+SELECT 'Kinanti Ninggar Rahardani' AS nama UNION ALL
+SELECT 'Nur Fitriyani' AS nama UNION ALL
+SELECT 'Wisnu Prawira Triatmaja' AS nama UNION ALL
+SELECT 'Prayoga Nanda Oktaviama' AS nama UNION ALL
+SELECT 'Nabila Isnaeni Utami' AS nama UNION ALL
+SELECT 'Aulia Maulida' AS nama UNION ALL
+SELECT 'Wirya Raihan Badu' AS nama UNION ALL
+SELECT 'Nabila Kurnia Sari' AS nama UNION ALL
+SELECT 'Nadilah Rahmawati Amida' AS nama UNION ALL
+SELECT 'Yurike Febrilian Hidayanti' AS nama UNION ALL
+SELECT 'Annisa Tazaskiah' AS nama UNION ALL
+SELECT 'Fatmah Wanda' AS nama UNION ALL
+SELECT 'Juliana Tanjung' AS nama UNION ALL
+SELECT 'Muhammad Rizal Purnama' AS nama UNION ALL
+SELECT 'Amanah Rizky Febrina' AS nama UNION ALL
+SELECT 'Elvita Permata Putri' AS nama UNION ALL
+SELECT 'Grace Tinarsih' AS nama UNION ALL
+SELECT 'Khezia Mevera Salasatul Maslahah' AS nama UNION ALL
+SELECT 'Nadya Auliyaa Devanka' AS nama UNION ALL
+SELECT 'Nurlita Aryani' AS nama UNION ALL
+SELECT 'Riqqoh Hafizhah' AS nama UNION ALL
+SELECT 'Rosa Ayulia Azhari' AS nama UNION ALL
+SELECT 'Dzaky Athallah Sukmana' AS nama UNION ALL
+SELECT 'Rizky Khadaf Fazandra' AS nama UNION ALL
+SELECT 'Syafiq Avicena Putra Mandala' AS nama UNION ALL
+SELECT 'Ridho Sukmadipraja' AS nama UNION ALL
+SELECT 'Ilham Dzikrullah' AS nama UNION ALL
+SELECT 'Nur Aziz Susanto' AS nama UNION ALL
+SELECT 'Rania Zahra' AS nama UNION ALL
+SELECT 'Ratu Alia Anggita Putri' AS nama UNION ALL
+SELECT 'Dini Khairunnisa' AS nama UNION ALL
+SELECT 'Khilda Nabilla' AS nama UNION ALL
+SELECT 'Adinda Maulydia Maharani' AS nama UNION ALL
+SELECT 'Tasya Anjali Marshanda' AS nama UNION ALL
+SELECT 'Olivianti Aulia' AS nama UNION ALL
+SELECT 'Advia Fy Zahra' AS nama UNION ALL
+SELECT 'Amanda Bella Agustina' AS nama UNION ALL
+SELECT 'Fadhila Adhi Kusuma Putra' AS nama UNION ALL
+SELECT 'Faradina Savitri Sucipto' AS nama UNION ALL
+SELECT 'Haulaini Kamila' AS nama UNION ALL
+SELECT 'Niko Samputro' AS nama UNION ALL
+SELECT 'Nurul Mawardah' AS nama UNION ALL
+SELECT 'Desi Arum Puspita Ayu' AS nama UNION ALL
+SELECT 'Khairun Nissa' AS nama UNION ALL
+SELECT 'Kholifah Syahrotul Hidayah' AS nama UNION ALL
+SELECT 'Muhammad Yusuf Naratama' AS nama UNION ALL
+SELECT 'Sandi Mega Saputra' AS nama UNION ALL
+SELECT 'Sifa Fauziah Saputri' AS nama UNION ALL
+SELECT 'Siti Nurkhalifah' AS nama UNION ALL
+SELECT 'Aditya Permana' AS nama UNION ALL
+SELECT 'Al-fiqri' AS nama UNION ALL
+SELECT 'Dina Riyanti Putri' AS nama UNION ALL
+SELECT 'Ditya Prima Putra' AS nama UNION ALL
+SELECT 'Femi Anggraeni' AS nama UNION ALL
+SELECT 'Ramadhan Rifan Fauzi' AS nama UNION ALL
+SELECT 'Safirah Ramadhian' AS nama UNION ALL
+SELECT 'Mutiah Mutmainah' AS nama UNION ALL
+SELECT 'Dewi Indah Larasati' AS nama UNION ALL
+SELECT 'Elsya Eka Pratiwi' AS nama UNION ALL
+SELECT 'Fardha Dinur Refindzki' AS nama UNION ALL
+SELECT 'Sandra Aulya Yaumalika' AS nama UNION ALL
+SELECT 'Shella Chyntia Darmawan' AS nama UNION ALL
+SELECT 'Vera Sukmawati' AS nama UNION ALL
+SELECT 'Athiqah Rachmani Adhara' AS nama UNION ALL
+SELECT 'Dewi Oktavia Firdaus' AS nama UNION ALL
+SELECT 'Diva Afifah' AS nama UNION ALL
+SELECT 'Fadhilah Hafisah' AS nama UNION ALL
+SELECT 'Lusiyana Rahmawati' AS nama UNION ALL
+SELECT 'Mohammad Yogi Pratama' AS nama UNION ALL
+-- SELECT 'Muhammad Ivan Pramudya Ba'arsyah' AS nama UNION ALL
+SELECT 'Safira Salsabella' AS nama UNION ALL
+SELECT 'Stefani Angelia Murdiyani' AS nama UNION ALL
+SELECT 'Tia Andrea Candra Adisti' AS nama UNION ALL
+SELECT 'Dewi Cintia' AS nama UNION ALL
+SELECT 'Gina Hastriyani' AS nama UNION ALL
+SELECT 'Dhiva Aswina Tasnim' AS nama UNION ALL
+SELECT 'Aulia Rahma Putri' AS nama UNION ALL
+SELECT 'Choirunisah' AS nama UNION ALL
+SELECT 'Indah Tri Astuti' AS nama UNION ALL
+SELECT 'Indra Rudiansyah' AS nama UNION ALL
+SELECT 'Kamal Abdul Nasir' AS nama UNION ALL
+SELECT 'Rizqi Athariq Syarifutra' AS nama UNION ALL
+SELECT 'Meliana Sabrina Suwondo' AS nama UNION ALL
+SELECT 'Rahmad Alfi Adinata' AS nama UNION ALL
+SELECT 'Salsabila' AS nama UNION ALL
+SELECT 'Anggita Vella' AS nama UNION ALL
+SELECT 'Rona Iviyena Wandani' AS nama UNION ALL
+SELECT 'Adinda Siti Azzahra' AS nama UNION ALL
+SELECT 'Andi Iftitah Sabina' AS nama UNION ALL
+SELECT 'Aulia Nurrahman' AS nama UNION ALL
+SELECT 'Hadiana' AS nama UNION ALL
+SELECT 'Kanaya Azzahra' AS nama UNION ALL
+SELECT 'Karen Cahyaningrum Hasim' AS nama UNION ALL
+SELECT 'Kholifa Ardhea' AS nama UNION ALL
+SELECT 'Nabila Larasaty' AS nama UNION ALL
+SELECT 'Niluh Susilewati' AS nama UNION ALL
+SELECT 'Nurul Sri ' AS nama UNION ALL
+SELECT 'Rajwa Safitri Anindya' AS nama UNION ALL
+SELECT 'Zulfah' AS nama UNION ALL
+SELECT 'Ananda Hunafa Sholeha' AS nama UNION ALL
+SELECT 'Dhea Amelia' AS nama UNION ALL
+SELECT 'Fany Alvionita' AS nama UNION ALL
+SELECT 'Gina Nur Afifah' AS nama UNION ALL
+SELECT 'Haura Afifa Ulya' AS nama UNION ALL
+SELECT 'Wulan Safitri' AS nama UNION ALL
+SELECT 'Kurnia Nur Arif Hakim' AS nama UNION ALL
+SELECT 'Linggar Fikri Syahputra' AS nama UNION ALL
+SELECT 'Agus Dwi Suryono' AS nama UNION ALL
+SELECT 'Ade Irma Maharani' AS nama UNION ALL
+SELECT 'Rayati' AS nama UNION ALL
+SELECT 'Yasmin Febriyanti' AS nama UNION ALL
+SELECT 'Refany Rani Ratri' AS nama UNION ALL
+SELECT 'Wuryantiningsih' AS nama UNION ALL
+SELECT 'Hesti Aisyah' AS nama UNION ALL
+SELECT 'Slamat Hidayat' AS nama UNION ALL
+SELECT 'Sulistakani' AS nama UNION ALL
+SELECT 'Septi Nur Lingga' AS nama UNION ALL
+SELECT 'Anissa Vella Syahbana' AS nama UNION ALL
+SELECT 'Ayu Rahmadani Putri' AS nama UNION ALL
+SELECT 'Deva Andhika Mayu' AS nama UNION ALL
+SELECT 'Dewi Retno Iswari' AS nama UNION ALL
+SELECT 'M Reza Saputra' AS nama UNION ALL
+SELECT 'Nabilah Yusrina' AS nama UNION ALL
+SELECT 'Muhammad Ardika Razak' AS nama UNION ALL
+SELECT 'Auliya Arden' AS nama UNION ALL
+SELECT 'Kian Mohammad Islam' AS nama UNION ALL
+SELECT 'Nanda Prasetya' AS nama UNION ALL
+SELECT 'Syahfitra Arliany Nurillah' AS nama UNION ALL
+SELECT 'Muhammad Sauqi Nur' AS nama UNION ALL
+SELECT 'Soleh' AS nama UNION ALL
+SELECT 'Alam Mudawwam Bakhroni' AS nama UNION ALL
+SELECT 'Irfan Abdul Fattah' AS nama UNION ALL
+SELECT 'Nur Sahratul Jannah' AS nama UNION ALL
+SELECT 'Abdul Haqi' AS nama UNION ALL
+SELECT 'Ali Ridho' AS nama UNION ALL
+SELECT 'Amanda Melati Septianingtyas' AS nama UNION ALL
+SELECT 'Azzahra Ilham Yunus' AS nama UNION ALL
+SELECT 'Firda Nurul Jannah ' AS nama UNION ALL
+SELECT 'Muhamad Raihan' AS nama UNION ALL
+SELECT 'Nadia Destiane Rahmadani' AS nama UNION ALL
+SELECT 'Raisa Elva Venera' AS nama UNION ALL
+SELECT 'Secilia Al Meisky' AS nama UNION ALL
+SELECT 'Hanah' AS nama UNION ALL
+SELECT 'Rusydah' AS nama UNION ALL
+SELECT 'Sekar Melati Radityaswari' AS nama UNION ALL
+SELECT 'Alfajri' AS nama UNION ALL
+SELECT 'Muhammad Faza Alizzan Ubaid' AS nama UNION ALL
+SELECT 'Nurwinda Wahyuningsih' AS nama UNION ALL
+SELECT 'Garini Tri Pramitasari' AS nama UNION ALL
+SELECT 'Achmad Fachmi Fauriza' AS nama UNION ALL
+SELECT 'Dzidan' AS nama UNION ALL
+SELECT 'Mohamad Athallah Azhar' AS nama UNION ALL
+SELECT 'Mohammad Raihan' AS nama UNION ALL
+SELECT 'Muhammad Zidan Ramadhan' AS nama UNION ALL
+SELECT 'Gema Alif Adzani Attar' AS nama UNION ALL
+SELECT 'Kemal Nashr Dwiputera' AS nama UNION ALL
+SELECT 'Alicia Marta Yulianti' AS nama UNION ALL
+SELECT 'Cinta Aqilah Nisa' AS nama UNION ALL
+SELECT 'Devita Ramadhiny' AS nama UNION ALL
+SELECT 'Hanny Aulia Mathilda' AS nama UNION ALL
+SELECT 'Keisya Al Hafizha' AS nama UNION ALL
+SELECT 'Maria Ulfa ' AS nama UNION ALL
+SELECT 'Nuraini Rahma Putri' AS nama UNION ALL
+SELECT 'Salsabila Putri' AS nama UNION ALL
+SELECT 'Ahmad Daris' AS nama UNION ALL
+SELECT 'Sherny Agita Chaerani' AS nama UNION ALL
+SELECT 'Adrian Raihandikha Romano' AS nama UNION ALL
+SELECT 'Akrama Arkani Dar Alfianisufi' AS nama UNION ALL
+SELECT 'Fahrizal Helmy Arrafiq' AS nama UNION ALL
+SELECT 'Maulizidya Zahra' AS nama UNION ALL
+SELECT 'Muhammad Devta Kautsar' AS nama UNION ALL
+SELECT 'Sarah Azzahra' AS nama UNION ALL
+SELECT 'Takahashi Aido' AS nama UNION ALL
+SELECT 'Viana Aulia Devi' AS nama UNION ALL
+SELECT 'Sri Handayani' AS nama UNION ALL
+SELECT 'Muhammad Dzikrika Rafi Wiharjanto' AS nama UNION ALL
+SELECT 'Syifa Fadhilah Salsabilah' AS nama UNION ALL
+SELECT 'Ahmad Rayhan' AS nama UNION ALL
+SELECT 'Ballqis Putri Surahman' AS nama UNION ALL
+SELECT 'Lina Fitri Hidayah' AS nama UNION ALL
+SELECT 'Silma Zarkasih' AS nama UNION ALL
+SELECT 'Siti Khofifatul Husna' AS nama UNION ALL
+SELECT 'Siti Rahmah Khoerunnisa' AS nama UNION ALL
+SELECT 'Windi Rolisstiani ' AS nama UNION ALL
+SELECT 'Yulia Fitri Sagita' AS nama UNION ALL
+SELECT 'Dhawany Azzahra' AS nama UNION ALL
+SELECT 'Urfa Salsabilatul Jannah' AS nama UNION ALL
+SELECT 'Wiwin Winda Astuti' AS nama UNION ALL
+SELECT 'Muhammad Ardian Prawira' AS nama UNION ALL
+SELECT 'Dinda Khusnul Khotimah' AS nama UNION ALL
+SELECT 'Nur Qomari Haryoko' AS nama UNION ALL
+SELECT 'Jaya Erlang Sukma' AS nama UNION ALL
+SELECT 'Dinda Aulia Aditama' AS nama UNION ALL
+SELECT 'Ahmad Farihin' AS nama UNION ALL
+SELECT 'Nur Muhammad Rifqi' AS nama UNION ALL
+SELECT 'Rafli Ramadhani' AS nama UNION ALL
+SELECT 'Ade Putri Hasanah Siregar' AS nama UNION ALL
+SELECT 'Alfi Alif Ramadhan' AS nama UNION ALL
+SELECT 'Alifah Nabila Mardiyah' AS nama UNION ALL
+SELECT 'Anggun Fiki Ardiyanto' AS nama UNION ALL
+SELECT 'Azka Parinduri' AS nama UNION ALL
+SELECT 'Intan Hidayati' AS nama UNION ALL
+SELECT 'Latifah Noor Jannah' AS nama UNION ALL
+SELECT 'Lila Saefilah' AS nama UNION ALL
+SELECT 'Malika Syifa Fauziah Putri' AS nama UNION ALL
+SELECT 'Mutiara Sabila' AS nama UNION ALL
+SELECT 'Nailah Nafirah Husna' AS nama UNION ALL
+SELECT 'Nisrina Nurul Shofa' AS nama UNION ALL
+SELECT 'Rizka Nur Rahma' AS nama UNION ALL
+SELECT 'Tahta Elka Yuliam' AS nama UNION ALL
+SELECT 'Zahra Athysa Rahman' AS nama UNION ALL
+SELECT 'Rafika Dwi Hapsari' AS nama UNION ALL
+SELECT 'Yulian Latifah' AS nama UNION ALL
+SELECT 'Gita Febrianti' AS nama UNION ALL
+SELECT 'Muhamad Afiffudin' AS nama UNION ALL
+SELECT 'Muhamad Rifky' AS nama UNION ALL
+SELECT 'Safana Meta Fitria' AS nama UNION ALL
+SELECT 'Amartiya Sukma Wulandari' AS nama UNION ALL
+SELECT 'Shilma Salsabila' AS nama UNION ALL
+SELECT 'Fithriyah Hanifah' AS nama UNION ALL
+SELECT 'Siti Nur Haliza' AS nama UNION ALL
+SELECT 'Fatihah Basyarewan' AS nama UNION ALL
+SELECT 'Putri Ramadania' AS nama UNION ALL
+SELECT 'Triananda Sabrina Akhiriani' AS nama UNION ALL
+SELECT 'Zalsabilla Arly Sigit' AS nama UNION ALL
+SELECT 'Fianka Zamira Adrelia' AS nama UNION ALL
+SELECT 'Thalina Rachma Pitaloka Wirakasma' AS nama UNION ALL
+SELECT 'Nada Rifdah Hayati Siregar' AS nama UNION ALL
+SELECT 'Salwa Istika Ayu' AS nama UNION ALL
+SELECT 'Tazkia Widad Nabila' AS nama UNION ALL
+SELECT 'Achmad Aqiel Saied' AS nama UNION ALL
+SELECT 'Syadiera Nuruz Zahra' AS nama UNION ALL
+SELECT 'Faras Salwa' AS nama UNION ALL
+SELECT 'Awinda Nur Aisyah' AS nama UNION ALL
+SELECT 'Maya Pratiwi' AS nama UNION ALL
+SELECT 'Dinda Syabina Putri Rojak' AS nama UNION ALL
+SELECT 'Marisa Sabila' AS nama UNION ALL
+SELECT 'Andira Febriaz Purwani' AS nama UNION ALL
+SELECT 'Cayla Anadya Namira Putri Kristyafajar' AS nama UNION ALL
+SELECT 'Siti Haryati' AS nama UNION ALL
+SELECT 'Abrar Jatnika Putra' AS nama UNION ALL
+SELECT 'Muhammad Sulthan Ashraf. A.' AS nama UNION ALL
+SELECT 'Ahmad Ghazali Machfudz' AS nama UNION ALL
+SELECT 'Izzar Ramdhani' AS nama UNION ALL
+SELECT 'Rizbrilliantda Arrifta' AS nama UNION ALL
+SELECT 'Annisa Syahrani' AS nama UNION ALL
+SELECT 'Bryan Oktavian' AS nama UNION ALL
+SELECT 'Kamila Nuratika Hasyim' AS nama UNION ALL
+SELECT 'Raza Zoraavara Bardah' AS nama UNION ALL
+SELECT 'Muhammad Fatih' AS nama UNION ALL
+SELECT 'A. Amaliah Nur Abadiah .B' AS nama UNION ALL
+SELECT 'Rizky Amaliah Oetami' AS nama UNION ALL
+SELECT 'Ajeng Dwinta Cahyani' AS nama UNION ALL
+SELECT 'Alifah Najla Fakhirah' AS nama UNION ALL
+SELECT 'Arthaprima Devandra Julianto' AS nama UNION ALL
+SELECT 'Aulia Zhalshabillah' AS nama UNION ALL
+SELECT 'Bintang Muhammad Cakrawala' AS nama UNION ALL
+SELECT 'Chayla Reynadiza Adilla Mathias' AS nama UNION ALL
+SELECT 'Cinta Calista Putri' AS nama UNION ALL
+SELECT 'Ferrell Sahlah Anfasyah' AS nama UNION ALL
+SELECT 'Hilyah Al Qanitah' AS nama UNION ALL
+SELECT 'Khairi Anggita Artani' AS nama UNION ALL
+SELECT 'Lintang Aminda Kuswara' AS nama UNION ALL
+SELECT 'Meisa Ayudity' AS nama UNION ALL
+SELECT 'Muhammad Fakhar Zidni' AS nama UNION ALL
+SELECT 'Murshafatimah Cecille Guritna' AS nama UNION ALL
+SELECT 'Najmahira Fansa Izdihar' AS nama UNION ALL
+SELECT 'Nizar Eguh Sesario' AS nama UNION ALL
+SELECT 'Putri Kinanti Setiawan ' AS nama UNION ALL
+SELECT 'Rifki Nadir Defrin Abdiansyah' AS nama UNION ALL
+SELECT 'Rodiyatul Adawiah Batubara' AS nama UNION ALL
+SELECT 'Septian Khairuddin ' AS nama UNION ALL
+SELECT 'Syiva Audiza Hidayat' AS nama UNION ALL
+SELECT 'Urfatul Aashifa Billa Rimbony Siner Reysen' AS nama UNION ALL
+SELECT 'Yuda Hari Pratama' AS nama UNION ALL
+SELECT 'Ziffani Putri Pradiva' AS nama UNION ALL
+SELECT 'Idza Dean Akira Calluella Putri' AS nama UNION ALL
+SELECT 'Shalma Devina' AS nama UNION ALL
+SELECT 'Dwi Andini' AS nama UNION ALL
+SELECT 'Ade Nugroho' AS nama UNION ALL
+SELECT 'Dion Hardika Sumarto' AS nama UNION ALL
+SELECT 'Fauzi Rifa' AS nama UNION ALL
+SELECT 'Arbain' AS nama UNION ALL
+SELECT 'Dara Zainil Anwar Musadad' AS nama UNION ALL
+SELECT 'Zulham Ibrohim Ardhian Syah' AS nama UNION ALL
+SELECT 'Gelar Rangga Sasmita' AS nama UNION ALL
+SELECT 'Anggun Sephia Putri' AS nama UNION ALL
+SELECT 'Dicky Ariansyah' AS nama UNION ALL
+SELECT 'Owen Dillon' AS nama UNION ALL
+SELECT 'Divia Natasha Nuzulia Rahmah' AS nama UNION ALL
+SELECT 'Zhafirah Nursabrina Andryana' AS nama UNION ALL
+SELECT 'Ervina' AS nama UNION ALL
+SELECT 'Aina Risfidhiyaa' AS nama UNION ALL
+SELECT 'Cholillah Ramadanti' AS nama UNION ALL
+SELECT 'Mardiana Saraswati' AS nama UNION ALL
+SELECT 'Monica Sari' AS nama UNION ALL
+SELECT 'Nafisah Aliyah Ramadhani' AS nama UNION ALL
+SELECT 'Nasiha Abigail Masyhur' AS nama UNION ALL
+SELECT 'Putri Zahrotunnisa' AS nama UNION ALL
+SELECT 'Rafina Yanti' AS nama UNION ALL
+SELECT 'Rifdah Syarifah' AS nama UNION ALL
+SELECT 'Sugiman' AS nama UNION ALL
+SELECT 'Indra Utama Nasution' AS nama UNION ALL
+SELECT 'Michiko Aflah Tiora' AS nama UNION ALL
+SELECT 'Shalby Athaya Putri' AS nama UNION ALL
+SELECT 'Annisa Arfiah' AS nama UNION ALL
+SELECT 'Ardiansyah Fahmi' AS nama UNION ALL
+SELECT 'Siti Shafira Khaerani ' AS nama UNION ALL
+SELECT 'Aditya Wisnu Purnomo' AS nama UNION ALL
+SELECT 'Andito Ridho Putra' AS nama UNION ALL
+SELECT 'Elok Maharani' AS nama UNION ALL
+SELECT 'Kevin Rayhan Nanda' AS nama UNION ALL
+SELECT 'Mahatma Thantyasurya Adamas Hardhiatma' AS nama UNION ALL
+SELECT 'Nadistha Putri Nugroho' AS nama UNION ALL
+SELECT 'Nanda Putri Adnya Rakhman' AS nama UNION ALL
+SELECT 'Nurul Fadhilah Anmalika Hartono' AS nama UNION ALL
+SELECT 'Rivaldy Muhammad Pradana' AS nama UNION ALL
+SELECT 'Bayu Sasono Aji' AS nama UNION ALL
+SELECT 'Farah Salsabila' AS nama UNION ALL
+SELECT 'Nanda Dwi Ferbiana' AS nama UNION ALL
+SELECT 'Tanti Dwi Andini ' AS nama UNION ALL
+SELECT 'Aulia Fathia Farhah' AS nama UNION ALL
+SELECT 'Dita Putri Budiyanti' AS nama UNION ALL
+SELECT 'Indah Nurfitriani' AS nama UNION ALL
+SELECT 'Mc Akhtar Ramzi Mahadri' AS nama UNION ALL
+SELECT 'Nurmaya Airina' AS nama UNION ALL
+SELECT 'Syifa Aulia Rabbani' AS nama UNION ALL
+SELECT 'Virna Karlina Septianingrum' AS nama UNION ALL
+SELECT 'Fajriah Putri Meidina' AS nama UNION ALL
+SELECT 'Razita Juzailah' AS nama UNION ALL
+SELECT 'Aryani Widya Kusuma' AS nama UNION ALL
+SELECT 'Carlitha Anggun Prashika' AS nama UNION ALL
+SELECT 'Siti Muslimah' AS nama UNION ALL
+SELECT 'Nisa Fitri Annafi' AS nama UNION ALL
+SELECT 'Madina Fathia Fathoniah' AS nama UNION ALL
+SELECT 'Shafal Abdul Raafi Jaya' AS nama UNION ALL
+SELECT 'Aqsha Qudhwa Fauzie' AS nama UNION ALL
+SELECT 'Aima Mauidzotul Hasanah' AS nama UNION ALL
+SELECT 'Sekar Ajeng Hapsari' AS nama UNION ALL
+SELECT 'Syahdina Alivia Syarif' AS nama UNION ALL
+SELECT 'Muhammad Alvarel' AS nama UNION ALL
+SELECT 'Amy Reza Pahlevi' AS nama UNION ALL
+SELECT 'Annisa Mardhikasari Prima Setyarini' AS nama UNION ALL
+SELECT 'Arsaesall' AS nama UNION ALL
+SELECT 'Azhar Sayyidina Usman' AS nama UNION ALL
+SELECT 'Dandy Rahman Syah' AS nama UNION ALL
+SELECT 'Dava Tulus Fadhilah' AS nama UNION ALL
+SELECT 'Diaz Andika Saputra' AS nama UNION ALL
+SELECT 'Difa Okta Samudra' AS nama UNION ALL
+SELECT 'Hadyan Girasto Asyraf' AS nama UNION ALL
+SELECT 'Intan Arta Namira' AS nama UNION ALL
+SELECT 'Mochamad Ravi Pramudya' AS nama UNION ALL
+SELECT 'Muhammad  Nafil Athallah' AS nama UNION ALL
+SELECT 'Rifqi Adhi Dharmawan' AS nama UNION ALL
+SELECT 'Alfito Wibisono' AS nama UNION ALL
+SELECT 'Anandya Aprilia Aileen' AS nama UNION ALL
+SELECT 'Dini Octaviani Az Zahra' AS nama UNION ALL
+SELECT 'Ferdiansyah Pratama Wibowo' AS nama UNION ALL
+SELECT 'Leonando Nova Pradana' AS nama UNION ALL
+SELECT 'Muhammad Alfath Bilhaqq' AS nama UNION ALL
+SELECT 'Nadira Zelika' AS nama UNION ALL
+SELECT 'Najwa Sayyida Sefulloh' AS nama UNION ALL
+SELECT 'Putra Dawin Pamungkas' AS nama UNION ALL
+SELECT 'Syenina Fihrli Hanandi' AS nama UNION ALL
+SELECT 'Tommy Rizki Ramadhan' AS nama UNION ALL
+SELECT 'Dhiya Almaqdisi' AS nama UNION ALL
+SELECT 'Gianti Mantasi' AS nama UNION ALL
+SELECT 'Maitsa Aqila Harmen' AS nama UNION ALL
+SELECT 'Muhammad Raul Fahrezi' AS nama UNION ALL
+SELECT 'Muhamad Reza Adillah' AS nama UNION ALL
+SELECT 'Muthiah Ari Setyanti' AS nama UNION ALL
+SELECT 'Nanda Marisca Putri Juandi' AS nama UNION ALL
+SELECT 'Nurhaliza Nazlia' AS nama UNION ALL
+SELECT 'Patricia Annisa Putri' AS nama UNION ALL
+SELECT 'Raihan Dwi Putra' AS nama UNION ALL
+SELECT 'Travis Daniswara Muhamad Alfitrah' AS nama UNION ALL
+SELECT 'Danny Kunto Wibisono' AS nama UNION ALL
+SELECT 'Alkabilal Perdana Putra' AS nama UNION ALL
+SELECT 'Anindita Citra Amarasyah' AS nama UNION ALL
+SELECT 'Muhammad Fadillah Abbyyu' AS nama UNION ALL
+SELECT 'Muhammad Naufal Alfarisi' AS nama UNION ALL
+SELECT 'Maharani Ananda S.' AS nama UNION ALL
+SELECT 'Shalimar Najla' AS nama UNION ALL
+SELECT 'Daffa Rananta Nazif' AS nama UNION ALL
+SELECT 'Muhamad Hazel Zaidan' AS nama UNION ALL
+SELECT 'Lorenzo Adolf Gabriel Ahadi' AS nama UNION ALL
+SELECT 'Fauzan Muhammad Yuzrin' AS nama UNION ALL
+SELECT 'Indah Khairunnisa' AS nama UNION ALL
+SELECT 'Salman Hilmy Athallah H' AS nama UNION ALL
+SELECT 'Muhammad Firman Satriawan' AS nama UNION ALL
+SELECT 'Abubakar Daffa Kusuma' AS nama UNION ALL
+SELECT 'Adella Anita Wilantoro' AS nama UNION ALL
+SELECT 'Adinda Aisha' AS nama UNION ALL
+SELECT 'Azka Rizquita Syakira' AS nama UNION ALL
+SELECT 'Davina Raffalia Rose' AS nama UNION ALL
+SELECT 'Dhafin Arrayan Armia' AS nama UNION ALL
+SELECT 'Ferdy Arrahman' AS nama UNION ALL
+SELECT 'Feronika Laura Wulandari' AS nama UNION ALL
+SELECT 'Khalisa Mecca Medhina' AS nama UNION ALL
+SELECT 'Khofifah' AS nama UNION ALL
+SELECT 'Mahira Ayasha Zalfa' AS nama UNION ALL
+SELECT 'Muhammad Ghazar Al Ghifari' AS nama UNION ALL
+SELECT 'Muhammad Raihan Zultian' AS nama UNION ALL
+SELECT 'Nabila Syaniya Putri' AS nama UNION ALL
+SELECT 'Nabila Yasyfa Sofian' AS nama UNION ALL
+SELECT 'Nadila Natasya ' AS nama UNION ALL
+SELECT 'Nahlazahira Rahmah' AS nama UNION ALL
+SELECT 'Najwa Allysa Ansyari' AS nama UNION ALL
+SELECT 'Namira Putri Maharany' AS nama UNION ALL
+SELECT 'Nindi Faradila' AS nama UNION ALL
+SELECT 'Nirina Dinda Hanifa' AS nama UNION ALL
+SELECT 'Rahma Vanya Pricilla' AS nama UNION ALL
+SELECT 'Rayyan Ramadhan Rais' AS nama UNION ALL
+SELECT 'Salma Shila Fathia ' AS nama UNION ALL
+SELECT 'Shafira Anidyamitha Salsabila' AS nama UNION ALL
+SELECT 'Syahda Afifah Ditya' AS nama UNION ALL
+SELECT 'Syifa Aulia' AS nama UNION ALL
+SELECT 'Tadiva Puja Shafira' AS nama UNION ALL
+SELECT 'Tarisha Dinda Putri' AS nama UNION ALL
+SELECT 'Kirana Sakha Dewi' AS nama UNION ALL
+SELECT 'Muhammad Hibban Aqshal Kautsar' AS nama UNION ALL
+SELECT 'Sabrinna Maharani' AS nama UNION ALL
+SELECT 'Shalimar Irda Amini' AS nama
+) AS daftar_nama
+LEFT JOIN t_wisuda tw ON TRIM(tw.nama) = TRIM(daftar_nama.nama) AND tw.idWisuda = 32
+WHERE tw.nama IS NULL;
+

@@ -19,16 +19,19 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // $nims = [
-        //     '0803623009',
-        // ];
+        $nims = [
+            '0311520161',
+            '0311521018',
+            '0311521030',
+            '0311521037'
+        ];
 
-        // foreach ($nims as $nim) {
-        //     PassStatement::create([
-        //         'nim' => $nim,
-        //         'description' => 'Cumlaude'
-        //     ]);
-        // }
+        foreach ($nims as $nim) {
+            PassStatement::create([
+                'nim' => $nim,
+                'description' => 'Lulus dengan Predikat Cumlaude'
+            ]);
+        }
 
         // Jobs
         // PassStatement::create([
@@ -74,9 +77,9 @@ class DatabaseSeeder extends Seeder
 
 
         // Best students
-        PassStatement::create([
-            'nim' => '0301521023',
-            'description' => 'Lulusan Terbaik Fakultas Ekonomi dan Bisnis Program Sarjana'
-        ]);
+        // PassStatement::create([
+        //     'nim' => '0801521031',
+        //     'description' => 'Lulusan Terbaik Universitas'
+        // ]);
     }
 }

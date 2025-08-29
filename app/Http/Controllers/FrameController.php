@@ -78,7 +78,6 @@ class FrameController extends Controller
             '0401521017',
             '0401521027',
             '0401521030',
-            '0401623007',
             '0402520010',
             '0403521024',
             '0403521036',
@@ -100,7 +99,6 @@ class FrameController extends Controller
             '0604521009',
             '0701521031',
             '0701521063',
-            '0702621006',
             '0702623001',
             '0702623005',
             '0702623018',
@@ -153,7 +151,8 @@ class FrameController extends Controller
             '0802521238',
             '0803623003',
             '0803623007',
-            '0803623009'
+            '0803623009',
+            '0311520161'
         ];
         // Hanya graduate dengan NIM tertentu DAN passStatements-nya kosong
         $dataPassStatementEmptyForSpecificNIMs = Graduate::with('passStatements')
