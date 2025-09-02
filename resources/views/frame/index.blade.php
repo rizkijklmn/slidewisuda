@@ -15,15 +15,15 @@
         @foreach ($graduates as $graduate)
             {{-- Wrapper detail student --}}
             <div
-                class="absolute left-0 bottom-0 right-0 py-12 transition-opacity duration-300 h-full w-full flex flex-col justify-between items-center  {{ $loop->index == 0 ? 'current' : '' }} slide">
+                class="absolute left-0 bottom-0 right-0 py-12 {{-- transition-opacity duration-300--}} h-full w-full flex flex-col justify-between items-center  {{ $loop->index == 0 ? 'current' : '' }} slide">
 
                 {{-- Faculty and departments --}}
                 <div class="w-full text-end mr-3">
                     <div class="text-white
-                        text-6xl text-bold text-shadow-sm shadow-gray-600">
+                        text-7xl font-bold text-shadow-sm shadow-gray-600">
                         {{ $graduate->department?->faculty->name }}</div>
                     <div class="text-white
-                        text-4xl text-bold text-shadow-sm shadow-gray-600">
+                        text-6xl text-bold text-shadow-sm shadow-gray-600 mt-1">
                         {{ $graduate->department?->name }}</div>
                 </div>
                 {{-- End of faculty and departments --}}
@@ -32,7 +32,7 @@
                 <div class="flex self-end">
                     <ul class="px-4 text-white text-end mb-12">
                         @foreach ($graduate->passStatements as $statement)
-                            <li class="font-bold text-4xl text-shadow-sm shadow-gray-600 max-w-6xl">
+                            <li class="font-bold text-4xl text-shadow-sm shadow-gray-600 max-w-full">
                                 {{ $statement->description }}
                             </li>
                         @endforeach
@@ -48,10 +48,10 @@
                                 alt="{{ $graduate->nim }}" class="w-full h-full" loading="lazy" />
                         </div>
 
-                        <div class="ml-6 flex flex-col justify-end mb-12">
-                            <div class="text-white font-bold text-6xl text-shadow-sm shadow-gray-600">
+                        <div class="ml-6 flex flex-col justify-end mb-24">
+                            <div class="text-white font-bold text-7xl text-shadow-sm shadow-gray-600">
                                 {{ $graduate->nama }}</div>
-                            <div class="text-white text-bold text-4xl text-shadow-sm shadow-gray-600">
+                            <div class="text-white text-bold text-6xl text-shadow-sm shadow-gray-600">
                                 {{ $graduate->department?->title }}</div>
                         </div>
                     </div>
