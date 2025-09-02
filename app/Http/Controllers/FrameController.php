@@ -12,10 +12,11 @@ class FrameController extends Controller
     {
         $filters = [
             'idWisuda' => 32,
-            'stKeuangan' => 'system:valid'
+            // 'stKeuangan' => 'system:valid'
         ];
 
-        $graduates = Graduate::with(['department', 'passStatements'])->where($filters)->get()->sortBy(fn($q) => $q->department->order_id);
+        // $graduates = Graduate::with(['department', 'passStatements'])->where($filters)->get()->sortBy(fn($q) => $q->department->order_id);
+        $graduates = Graduate::with(['department', 'passStatements'])->where($filters)->get()->sortBy(fn($q) => $q->urut);
 
         return view('frame.index', [
             'graduates' => $graduates->all()
@@ -132,7 +133,6 @@ class FrameController extends Controller
             '0702623083',
             '0711521005',
             '0711521018',
-            '0711521052',
             '0801521031',
             '0801521040',
             '0802521007',
