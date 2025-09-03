@@ -20,10 +20,10 @@
 
                 {{-- Faculty and departments --}}
                 <div class="w-full text-end mr-3">
-                    <div class="text-yellow-400
+                    <div class="text-white
                         text-6xl text-bold text-shadow-sm shadow-gray-600">
                         {{ $graduate->department?->faculty->name }}</div>
-                    <div class="text-yellow-400
+                    <div class="text-white
                         text-4xl text-bold text-shadow-sm shadow-gray-600 mt-2" style="font-size:3.25rem;">
                         {{ $graduate->department?->name }}</div>
                 </div>
@@ -31,7 +31,7 @@
 
                 {{-- Pass statement --}}
                 <div class="flex self-end">
-                    <ul class="px-4 text-yellow-400 text-end mb-12">
+                    <ul class="px-4 text-white text-end mb-12">
                         @foreach ($graduate->passStatements as $statement)
                             <li class="font-bold text-4xl text-shadow-sm shadow-gray-600 max-w-full">
                                 {{ $statement->description }}
@@ -50,9 +50,9 @@
                         </div>
 
                         <div class="ml-6 flex flex-col justify-end" style="margin-bottom:90px;">
-                            <div class="text-yellow-400 font-bold text-6xl text-shadow-sm shadow-gray-600">
+                            <div class="text-white font-bold text-6xl text-shadow-sm shadow-gray-600">
                                 {{ $graduate->nama }}</div>
-                            <div class="text-yellow-400 text-bold {{--text-4xl--}} text-shadow-sm shadow-gray-600" style="font-size:3.25rem;">
+                            <div class="text-white text-bold {{--text-4xl--}} text-shadow-sm shadow-gray-600" style="font-size:3.25rem;">
                                 {{ $graduate->department?->title }}</div>
                         </div>
                     </div>
