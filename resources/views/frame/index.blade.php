@@ -20,18 +20,18 @@
 
                 {{-- Faculty and departments --}}
                 <div class="w-full text-end mr-3">
-                    <div class="text-white
-                        text-6xl text-bold text-shadow-sm shadow-gray-600">
+                    <div class="{{--text-white--}}
+                        text-6xl text-bold text-shadow-sm shadow-gray-600" style="color:yellow;">
                         {{ $graduate->department?->faculty->name }}</div>
-                    <div class="text-white
-                        text-4xl text-bold text-shadow-sm shadow-gray-600 mt-2" style="font-size:3.25rem;">
+                    <div class="{{--text-white--}}
+                        text-4xl text-bold text-shadow-sm shadow-gray-600 mt-2" style="font-size:3.25rem;color:yellow;">
                         {{ $graduate->department?->name }}</div>
                 </div>
                 {{-- End of faculty and departments --}}
 
                 {{-- Pass statement --}}
                 <div class="flex self-end">
-                    <ul class="px-4 text-white text-end mb-12">
+                    <ul class="px-4 {{--text-white--}} text-end mb-12" style="color:yellow;">
                         @foreach ($graduate->passStatements as $statement)
                             <li class="font-bold text-4xl text-shadow-sm shadow-gray-600 max-w-full">
                                 {{ $statement->description }}
@@ -50,9 +50,9 @@
                         </div>
 
                         <div class="ml-6 flex flex-col justify-end" style="margin-bottom:90px;">
-                            <div class="text-white font-bold text-6xl text-shadow-sm shadow-gray-600">
+                            <div class="{{--text-white--}} font-bold text-6xl text-shadow-sm shadow-gray-600" style="color:yellow;">
                                 {{ $graduate->nama }}</div>
-                            <div class="text-white text-bold {{--text-4xl--}} text-shadow-sm shadow-gray-600" style="font-size:3.25rem;">
+                            <div class="{{--text-white--}} text-bold {{--text-4xl--}} text-shadow-sm shadow-gray-600" style="font-size:3.25rem; color:yellow;">
                                 {{ $graduate->department?->title }}</div>
                         </div>
                     </div>
