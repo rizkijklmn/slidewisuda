@@ -8,18 +8,23 @@ use Illuminate\Http\Request;
 class SlideshowController extends Controller
 {
     //
-    public function index()
+    public function index($session = null)
     {
         $filters = [
-            'idWisuda' => 32,
-            'stKeuangan' => 'system:valid'
+            'idWisuda' => 34,
+            // 'stKeuangan' => 'system:valid'
         ];
 
         // $graduates = Graduate::with(['department', 'passStatements'])->where($filters)->get()->sortBy(fn ($q) => $q->department?->order_id);
-        $graduates = Graduate::with(['department', 'passStatements'])->where($filters)->get()->sortBy(fn($q) => $q->urut);
+        $graduates = Graduate::with(['department', 'passStatements'])
+            ->where($filters)
+            ->where('ketPerpustakaan', 'like', '%Online%')
+            ->get()
+            ->sortBy(fn($q) => $q->urut);
 
         return view('slideshow.index', [
-            'graduates' => $graduates->all()
+            'graduates' => $graduates->all(),
+            'startIndex' => $session
         ]);
     }
 

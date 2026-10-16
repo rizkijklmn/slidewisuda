@@ -17,7 +17,7 @@
                 class="absolute py-4 px-6 transition-opacity duration-700 flex flex-col {{ $loop->index == $index ? 'current' : '' }} slide">
                 <div class="flex flex-row mb-4">
                     <div class="h-80 w-64 border-4 border-yellow-400 rounded-md mr-8">
-                        <img src="{{ asset('storage/images/28/' . $graduate->nim . '.jpg') }}" alt="Graduate Image"
+                        <img src="{{ $graduate->photo_url }}" alt="Graduate Image"
                             class="h-full w-full">
                     </div>
                     <div

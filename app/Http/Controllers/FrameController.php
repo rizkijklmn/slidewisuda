@@ -8,10 +8,10 @@ use Illuminate\Http\Request;
 
 class FrameController extends Controller
 {
-    public function index()
+    public function index($session = null)
     {
         $filters = [
-            'idWisuda' => 32,
+            'idWisuda' => 34,
             // 'stKeuangan' => 'system:valid'
         ];
 
@@ -19,7 +19,8 @@ class FrameController extends Controller
         $graduates = Graduate::with(['department', 'passStatements'])->where($filters)->get()->sortBy(fn($q) => $q->urut);
 
         return view('frame.index', [
-            'graduates' => $graduates->all()
+            'graduates' => $graduates->all(),
+            'startIndex' => $session
         ]);
     }
 

@@ -11,14 +11,23 @@
 </head>
 
 <body>
-    <div class="relative w-screen h-screen bg-wisuda-31 bg-cover bg-no-repeat flex justify-center items-center ">
+    <div class="relative w-screen h-screen bg-wisuda-34-black bg-cover bg-no-repeat flex justify-center items-center ">
         @foreach ($graduates as $graduate)
+            @php
+                $isCurrent = false;
+                if (isset($startIndex) && $startIndex !== null && $startIndex !== '') {
+                    $isCurrent = ($graduate->urut == $startIndex) || ($loop->iteration == $startIndex) || ($loop->index == $startIndex);
+                } else {
+                    $isCurrent = ($loop->index == 0);
+                }
+            @endphp
             <div
-                class="absolute py-4 px-6 mt-12 transition-opacity duration-700 flex flex-col {{ $loop->index == 0 ? 'current' : '' }} slide">
+                class="absolute py-4 px-6 mt-12 transition-opacity duration-700 flex flex-col {{ $isCurrent ? 'current' : '' }} slide"
+                data-urut="{{ $graduate->urut }}" data-index="{{ $loop->iteration }}">
                 <div class="flex flex-row mb-4">
                     <div class="h-96 w-72 border-4 border-yellow-400 rounded-md mr-8 overflow-hidden">
-                        <img src="{{ asset('storage/images/32/' . $graduate->nim . '.jpg') }}"
-                            alt="{{ $graduate->nim }}" class="w-full h-full" loading="lazy">
+                        <img src="{{ $graduate->photo_url }}"
+                            alt="{{ $graduate->nim }}" class="w-full h-full object-cover" decoding="async">
                     </div>
 
                     <div
@@ -38,9 +47,10 @@
                     </div>
                 </div>
                 <div class="py-6 text-center font-bold text-3xl bg-white rounded-md border-4 border-yellow-400">
-                    <div>{{ __('Program Studi ') . $graduate->department?->name }}</div>
-                    <div>{{ $graduate->department?->faculty->name }}</div>
                     <div>{{ $graduate->department?->title }}</div>
+                    <br>
+                    <div>{{ __('Program Studi ') . $graduate->department?->name }}</div>
+                    <div>Fakultas {{ $graduate->department?->faculty->name }}</div>
                 </div>
             </div>
         @endforeach

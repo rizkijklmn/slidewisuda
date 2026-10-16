@@ -24,6 +24,9 @@ module.exports = {
                 "wisuda-29": "url(../images/bg-wisuda-29.jpg)",
                 "wisuda-30": "url(../images/bg-wisuda-30.jpg)",
                 "wisuda-31": "url(../images/bg-wisuda-31.jpeg)",
+                "wisuda-34-orange": "url(../images/bg-wisuda-34-orange.jpg)",
+                "wisuda-34-black": "url(../images/bg-wisuda-34-black.jpg)",
+
             },
             fontFamily: {
                 sans: ["Nunito", ...defaultTheme.fontFamily.sans],

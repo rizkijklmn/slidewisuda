@@ -13,10 +13,19 @@
 <body>
     <div class="relative h-screen bg-[#00ff00]">
         @foreach ($graduates as $graduate)
+            @php
+                $isCurrent = false;
+                if (isset($startIndex) && $startIndex !== null && $startIndex !== '') {
+                    $isCurrent = ($graduate->urut == $startIndex) || ($loop->iteration == $startIndex) || ($loop->index == $startIndex);
+                } else {
+                    $isCurrent = ($loop->index == 0);
+                }
+            @endphp
 
         {{-- Wrapper detail student --}}
             <div
-                class="absolute left-0 bottom-0 right-0 py-12 transition-opacity duration-300 h-full w-full flex flex-col justify-between items-center  {{ $loop->index == 0 ? 'current' : '' }} slide">
+                class="absolute left-0 bottom-0 right-0 py-12 transition-opacity duration-300 h-full w-full flex flex-col justify-between items-center {{ $isCurrent ? 'current' : '' }} slide"
+                data-urut="{{ $graduate->urut }}" data-index="{{ $loop->iteration }}">
 
                 {{-- Faculty and departments --}}
                 <div class="w-full text-end mr-3">
@@ -45,9 +54,9 @@
                 {{-- Student detail --}}
                 <div class="flex justify-between items-center w-full">
                     <div class="flex">
-                        <div class="w-60 h-80 border-4 rounded border-white">
-                            <img src="{{ asset('storage/images/32/' . $graduate->nim . '.jpg') }}"
-                                alt="{{ $graduate->nim }}" class="w-full h-full" loading="lazy" />
+                        <div class="w-60 h-80 border-4 rounded border-white overflow-hidden bg-transparent">
+                            <img src="{{ $graduate->photo_url }}"
+                                alt="{{ $graduate->nim }}" class="w-full h-full object-cover" decoding="async" />
                         </div>
 
                         <div class="ml-6 flex flex-col justify-end mb-12">
