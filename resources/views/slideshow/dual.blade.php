@@ -121,24 +121,24 @@
                                     </div>
 
                                     {{-- Detail Teks --}}
-                                    <div class="flex-1 flex flex-col justify-between bg-white/95 rounded-xl border-4 border-yellow-400 p-4 md:p-5 shadow-xl min-w-0 overflow-hidden">
+                                    <div class="flex-1 flex flex-col justify-between bg-black/75 backdrop-blur-md rounded-xl border-4 border-yellow-400 p-4 md:p-5 shadow-xl min-w-0 overflow-hidden text-white">
                                         <div>
-                                            <div class="text-xs font-bold text-blue-700 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                                            <div class="text-xs font-bold text-blue-400 uppercase tracking-wider mb-1 flex items-center gap-1.5">
                                                 <span>Jalur A</span> &bull; <span>Urut #{{ $graduate->urut }}</span>
                                             </div>
-                                            <h3 class="font-bold text-xl md:text-2xl text-gray-900 leading-tight line-clamp-2">
+                                            <h3 class="font-extrabold text-xl md:text-2xl text-yellow-400 leading-tight line-clamp-2">
                                                 {{ $graduate->nama }}
                                             </h3>
-                                            <p class="font-semibold text-sm md:text-base text-gray-600 mt-0.5 tracking-wider font-mono">
+                                            <p class="font-semibold text-sm md:text-base text-yellow-200/90 mt-0.5 tracking-wider font-mono">
                                                 {{ $graduate->nim }}
                                             </p>
                                         </div>
 
-                                        <div class="my-2 border-t border-b border-gray-200 py-2">
-                                            <p class="text-xs font-bold text-gray-500 uppercase">
+                                        <div class="my-2 border-t border-b border-white/20 py-2">
+                                            <p class="text-xs font-bold text-yellow-400 uppercase">
                                                 {{ !in_array($graduate->department?->id, [36, 42, 43, 44]) ? 'Judul Skripsi:' : 'Judul Tesis:' }}
                                             </p>
-                                            <p class="text-xs md:text-sm text-gray-800 line-clamp-3 italic leading-relaxed mt-0.5">
+                                            <p class="text-xs md:text-sm text-gray-200 line-clamp-3 italic leading-relaxed mt-0.5">
                                                 {{ !in_array($graduate->department?->id, [36, 42, 43, 44]) ? mb_convert_encoding($graduate->judulSkripsi, 'UTF-8') : html_entity_decode(htmlentities($graduate->judulSkripsi)) }}
                                             </p>
                                         </div>
@@ -147,8 +147,8 @@
                                             <div>
                                                 <ul class="space-y-0.5">
                                                     @foreach ($graduate->passStatements as $statement)
-                                                        <li class="font-bold text-xs md:text-sm text-amber-700 flex items-center gap-1.5">
-                                                            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                                                        <li class="font-bold text-xs md:text-sm text-amber-300 flex items-center gap-1.5">
+                                                            <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
                                                             <span class="line-clamp-1">{{ $statement->description }}</span>
                                                         </li>
                                                     @endforeach
@@ -159,11 +159,11 @@
                                 </div>
 
                                 {{-- Baris Bawah: Program Studi & Fakultas --}}
-                                <div class="mt-3 bg-white/95 rounded-xl border-4 border-yellow-400 py-3 px-4 text-center shadow-xl flex-shrink-0">
-                                    <div class="font-bold text-base md:text-xl text-gray-900 leading-tight">
+                                <div class="mt-3 bg-black/75 backdrop-blur-md rounded-xl border-4 border-yellow-400 py-3 px-4 text-center shadow-xl flex-shrink-0 text-white">
+                                    <div class="font-bold text-base md:text-xl text-yellow-400 leading-tight">
                                         {{ __('Program Studi ') . $graduate->department?->name }}
                                     </div>
-                                    <div class="text-xs md:text-sm font-semibold text-gray-700 mt-0.5">
+                                    <div class="text-xs md:text-sm font-semibold text-gray-200 mt-0.5">
                                         {{ $graduate->department?->faculty?->name }} &bull; {{ $graduate->department?->title }}
                                     </div>
                                 </div>
@@ -224,24 +224,24 @@
                                     </div>
 
                                     {{-- Detail Teks --}}
-                                    <div class="flex-1 flex flex-col justify-between bg-white/95 rounded-xl border-4 border-yellow-400 p-4 md:p-5 shadow-xl min-w-0 overflow-hidden">
+                                    <div class="flex-1 flex flex-col justify-between bg-black/75 backdrop-blur-md rounded-xl border-4 border-yellow-400 p-4 md:p-5 shadow-xl min-w-0 overflow-hidden text-white">
                                         <div>
-                                            <div class="text-xs font-bold text-emerald-700 uppercase tracking-wider mb-1 flex items-center gap-1.5">
+                                            <div class="text-xs font-bold text-emerald-400 uppercase tracking-wider mb-1 flex items-center gap-1.5">
                                                 <span>Jalur B</span> &bull; <span>Urut #{{ $graduate->urut }}</span>
                                             </div>
-                                            <h3 class="font-bold text-xl md:text-2xl text-gray-900 leading-tight line-clamp-2">
+                                            <h3 class="font-extrabold text-xl md:text-2xl text-yellow-400 leading-tight line-clamp-2">
                                                 {{ $graduate->nama }}
                                             </h3>
-                                            <p class="font-semibold text-sm md:text-base text-gray-600 mt-0.5 tracking-wider font-mono">
+                                            <p class="font-semibold text-sm md:text-base text-yellow-200/90 mt-0.5 tracking-wider font-mono">
                                                 {{ $graduate->nim }}
                                             </p>
                                         </div>
 
-                                        <div class="my-2 border-t border-b border-gray-200 py-2">
-                                            <p class="text-xs font-bold text-gray-500 uppercase">
+                                        <div class="my-2 border-t border-b border-white/20 py-2">
+                                            <p class="text-xs font-bold text-yellow-400 uppercase">
                                                 {{ !in_array($graduate->department?->id, [36, 42, 43, 44]) ? 'Judul Skripsi:' : 'Judul Tesis:' }}
                                             </p>
-                                            <p class="text-xs md:text-sm text-gray-800 line-clamp-3 italic leading-relaxed mt-0.5">
+                                            <p class="text-xs md:text-sm text-gray-200 line-clamp-3 italic leading-relaxed mt-0.5">
                                                 {{ !in_array($graduate->department?->id, [36, 42, 43, 44]) ? mb_convert_encoding($graduate->judulSkripsi, 'UTF-8') : html_entity_decode(htmlentities($graduate->judulSkripsi)) }}
                                             </p>
                                         </div>
@@ -250,8 +250,8 @@
                                             <div>
                                                 <ul class="space-y-0.5">
                                                     @foreach ($graduate->passStatements as $statement)
-                                                        <li class="font-bold text-xs md:text-sm text-amber-700 flex items-center gap-1.5">
-                                                            <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
+                                                        <li class="font-bold text-xs md:text-sm text-amber-300 flex items-center gap-1.5">
+                                                            <span class="w-1.5 h-1.5 rounded-full bg-amber-400"></span>
                                                             <span class="line-clamp-1">{{ $statement->description }}</span>
                                                         </li>
                                                     @endforeach
@@ -262,11 +262,11 @@
                                 </div>
 
                                 {{-- Baris Bawah: Program Studi & Fakultas --}}
-                                <div class="mt-3 bg-white/95 rounded-xl border-4 border-yellow-400 py-3 px-4 text-center shadow-xl flex-shrink-0">
-                                    <div class="font-bold text-base md:text-xl text-gray-900 leading-tight">
+                                <div class="mt-3 bg-black/75 backdrop-blur-md rounded-xl border-4 border-yellow-400 py-3 px-4 text-center shadow-xl flex-shrink-0 text-white">
+                                    <div class="font-bold text-base md:text-xl text-yellow-400 leading-tight">
                                         {{ __('Program Studi ') . $graduate->department?->name }}
                                     </div>
-                                    <div class="text-xs md:text-sm font-semibold text-gray-700 mt-0.5">
+                                    <div class="text-xs md:text-sm font-semibold text-gray-200 mt-0.5">
                                         {{ $graduate->department?->faculty?->name }} &bull; {{ $graduate->department?->title }}
                                     </div>
                                 </div>
