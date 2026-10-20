@@ -1,3 +1,24 @@
+@font-face {
+    font-family: 'Relationship of mélodrame';
+    src: url('/fonts/Relationship-of-melodrame.ttf') format('truetype'),
+         local('Relationship of mélodrame'),
+         local('Relationship of melodrame');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('/fonts/Poppins-Medium.ttf') format('truetype'),
+         local('Poppins Medium'),
+         local('Poppins-Medium'),
+         local('Poppins');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

@@ -30,6 +30,13 @@ module.exports = {
             },
             fontFamily: {
                 sans: ["Nunito", ...defaultTheme.fontFamily.sans],
+                poppins: ["Poppins", ...defaultTheme.fontFamily.sans],
+                relationship: [
+                    "'Relationship of mélodrame'",
+                    "'Relationship of melodrame'",
+                    "'Relationship of mélodrame'",
+                    ...defaultTheme.fontFamily.sans,
+                ],
             },
         },
     },
