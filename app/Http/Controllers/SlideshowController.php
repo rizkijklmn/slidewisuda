@@ -19,6 +19,8 @@ class SlideshowController extends Controller
         $graduates = Graduate::with(['department', 'passStatements'])
             ->where($filters)
             ->where('ketPerpustakaan', 'like', '%Online%')
+            // ->where('ketPerpustakaan', 'not like', '%Online%')
+            ->where('urut', '>', 0)
             ->get()
             ->sortBy(fn($q) => $q->urut);
 

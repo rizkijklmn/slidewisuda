@@ -111,13 +111,21 @@
                     </div>
                 </div>
 
-                {{-- Baris Bawah: Gelar, Program Studi & Fakultas --}}
+                {{-- Baris Bawah: Gelar, Program Studi & Fakultas, Untuk Online --}}
                 <div class="w-[77.5rem] py-5 px-8 text-center bg-black/75 backdrop-blur-md rounded-xl border-4 border-yellow-400 shadow-2xl font-poppins">
                     <div class="font-medium text-5xl xl:text-6xl text-yellow-400 tracking-wider leading-tight">{{ $graduate->department?->title }}</div>
                     <br>
                     <div class="font-medium text-4xl xl:text-5xl text-white mt-2 tracking-wide leading-tight">{{ __('Program Studi ') . $graduate->department?->name }}</div>
                     <div class="font-medium text-5xl xl:text-6xl text-gray-200 mt-1.5 leading-tight">Fakultas {{ $graduate->department?->faculty?->name }}</div>
                 </div>
+
+                {{-- untuk offline --}}
+                 {{-- <div class="w-[77.5rem] py-5 px-8 text-center bg-black/75 backdrop-blur-md rounded-xl border-4 border-yellow-400 shadow-2xl font-poppins">
+                    <div class="font-medium text-5xl xl:text-5xl text-yellow-400 tracking-wider leading-tight">{{ $graduate->department?->title }}</div>
+                    <br>
+                    <div class="font-medium text-4xl xl:text-4xl text-white mt-2 tracking-wide leading-tight">{{ __('Program Studi ') . $graduate->department?->name }}</div>
+                    <div class="font-medium text-5xl xl:text-5xl text-gray-200 mt-1.5 leading-tight">Fakultas {{ $graduate->department?->faculty?->name }}</div>
+                </div> --}}
             </div>
         @endforeach
     </div>
